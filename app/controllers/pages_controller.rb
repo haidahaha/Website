@@ -3,4 +3,8 @@ class PagesController < ApplicationController
         page = params[:page] || :home
         render page
     end
+
+    def form_submit
+        redirect_to :root
+    end
 end

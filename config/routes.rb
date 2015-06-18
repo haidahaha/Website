@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root "pages#index"
   get "pages/:page" => "pages#index", as: :pages
+  post "pages/form_submit" => "pages#form_submit", as: :form_submit
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
